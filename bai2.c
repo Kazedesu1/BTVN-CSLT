@@ -2,12 +2,14 @@
 #include <stdio.h>
 
 int main()
-{
+{   
     int a[10][10],b[10][10],c[10][10],n,m,i,j,k,sum,max,min,sumcot,sumdong,temp;
     printf("nhập vào số dòng: ");
     scanf("%d",&n);
     printf("nhập vào số cột: ");
     scanf("%d",&m);
+    if(n>=1 && n<=100 && m>=1 && m<=100)
+    {
     for(i=0;i<n;i++)
     for(j=0;j<m;j++)
     {
@@ -100,5 +102,9 @@ int main()
     printf("%d ",a[i][j]);
     printf("\n");
    }
+    }
+    else
+    printf("số không hợp lệ");
         return 0;
+
 }
